@@ -1,0 +1,126 @@
+/* Footer Styles */
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-top: 5px solid #6a1b9a;
+    border-radius: 8px;
+}
+
+/* Footer Content */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Footer Sections */
+.footer-section {
+    flex: 1;
+    min-width: 280px;
+    margin-bottom: 20px;
+}
+
+/* Logo */
+.logo-text {
+    font-size: 28px;
+    font-weight: bold;
+    color: #6a1b9a;
+    margin-bottom: 20px;
+}
+
+/* Contact Info */
+.contact span {
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Social Media Links */
+.socials {
+    margin-top: 20px;
+}
+
+.socials a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #6a1b9a;
+}
+
+/* Quick Links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin: 8px 0;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.footer-section ul a:hover {
+    color: #6a1b9a;
+}
+
+/* Contact Form */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+.contact-form button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #5a27c5;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid gray;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 90%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,147 @@
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 20px 0;
+    gap: 20px;
+    position: relative;
+}
+
+.news-data-container {
+    flex: 1;
+    min-width: 0;
+}
+
+.main-content {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.prev-btn,
+.next-btn {
+    background-color: #6a1b9a;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #4a148c;
+}
+
+aside {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    color: #333;
+    right: 0;
+    margin-left: 20px;
+    background-color: #f9f9f9;
+}
+
+.related-news h3 {
+    text-align: center;
+    border-radius: 7px;
+    padding: 8px;
+    background: #6a1b9a;
+    color: #ffffff;
+    font-size: 1.4em;
+    margin-bottom: 15px;
+}
+
+.related-news ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.related-news li {
+    margin-bottom: 12px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.related-news a {
+    text-decoration: none;
+    color: #6a1b9a;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.related-news a:hover {
+    text-decoration: underline;
+    color: #d1c4e9;
+}
+
+@media (max-width: 1024px) {
+    .content {
+        flex-direction: column;
+
+    }
+
+    aside {
+        width: 100%;
+        margin-top: 20px;
+        position: static;
+        margin-left: 0;
+    }
+
+    .news-data-container {
+        width: 100%;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prev-btn,
+    .next-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Disabled button styling */
+button:disabled {
+    background-color: #ddd;
+    color: #666;
+    cursor: not-allowed;
+    border: none;
+    opacity: 0.6;
+}
+
+/* You can customize further for disabled button states */
+.prev-btn:disabled,
+.next-btn:disabled {
+    background-color: #bbb;
+}

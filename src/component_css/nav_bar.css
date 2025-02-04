@@ -1,0 +1,95 @@
+/* Basic Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a1b9a;
+    color: white;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logo:hover {
+    color: #d1c4e9;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    gap: 25px;
+}
+
+.nav a {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: #d1c4e9;
+    text-decoration: underline;
+}
+
+/* Mobile Menu Button */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.menu-toggle:hover {
+    transform: rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: -66.67%;
+        /* Start off-screen */
+        width: 66.33%;
+        /* Show 1/3 of the screen */
+        background-color: #6a1b9a;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0 8px 8px 0;
+        transition: left 0.3s ease;
+        z-index: 1;
+    }
+
+    .nav.active {
+        left: 0;
+        /* Slide into view */
+        display: flex;
+    }
+
+    .nav a {
+        padding: 10px;
+        display: block;
+    }
+}
