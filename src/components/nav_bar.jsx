@@ -16,7 +16,7 @@ class Nav extends Component {
         return (
             <>
                 <header className="header">
-                    <Link to="#" className="logo">News</Link>
+                    <Link to="#" className="logo"> <i>Flying-News</i> </Link>
                     <button className="menu-toggle" onClick={() => { this.setState({ menuOpen: !this.state.menuOpen }); }}> ☰ </button>
                     <nav className={`nav ${this.state.menuOpen ? "active" : ""}`}>
                         <Link to="/"> Home</Link>
