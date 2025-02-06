@@ -1,0 +1,21 @@
+react uses both class based and function based component : mostly prefer functionbased component
+what is jsx? : within {} i can write js
+babel : compiles jsx code.  
+single page application. 
+named exports and default exports difference.
+props : propTypes, defaultProps, isRequired
+events, states(useState) --- #7
+darkmode : calback function(child to parent), distonary 
+title change, setInterval(), setTimeOut()
+Routers : Router, Routes, Route, Switch, Link
+class based components :::: extends, render, constructor, super(), 
+componentDidMount, async, await, parseJson, componentDidUpdate
+life-Cycle-methods(class-base): render(), componentDidMount(), componentDidUpdate(), componentWillUnmount()
+life-Cycle-methods: "https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/"
+infinate-scroll: vedio-no(35)
+loading-bar-top: "https://www.npmjs.com/package/react-top-loading-bar"
+life-Cycle-methods(function-based): useState, useEffect, useContext, useRef
+useState = state, setState
+useEffect = componentDidUpdate, componentDidMount
+websockets
+
