@@ -6,6 +6,8 @@ import LoadingBar from "react-top-loading-bar";
 import "./App.css";
 import New_container from "./components/new_container";
 import Footer from "./components/footer";
+import About from "./components/about";
+
 
 class App extends Component {
 
@@ -34,6 +36,7 @@ class App extends Component {
           <Nav />
           <Routes>
             <Route exact path="/" element={<New_container progress={this.setProgress} cdl={this.state.itemCount} category="general" />} />
+            <Route exact path="/about" element={<About />} />
             <Route exact path="/business" element={<New_container progress={this.setProgress} cdl={this.state.itemCount} category="business" />} />
             <Route exact path="/entertainment" element={<New_container progress={this.setProgress} cdl={this.state.itemCount} category="entertainment" />} />
             <Route exact path="/general" element={<New_container progress={this.setProgress} cdl={this.state.itemCount} category="general" />} />
